@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="239" id="KGk-i7-Jjw" customClass="GalleryTableViewCell" customModule="za_feed_excercise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_white" translatesAutoresizingMaskIntoConstraints="NO" id="Uet-N2-PH4">
+                        <rect key="frame" x="272" y="189" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="OCZ-36-u7Y"/>
+                            <constraint firstAttribute="width" constant="32" id="oXP-sc-3z8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4h-yg-VUh">
+                        <rect key="frame" x="16" y="195" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCh-xt-Z3D">
+                        <rect key="frame" x="223.5" y="195" width="39.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="uMh-Al-gCB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unsplash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="JrR-rg-Hsc">
+                        <rect key="frame" x="16" y="13" width="288" height="168"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="168" id="eBb-xQ-XqN"/>
+                            <constraint firstAttribute="width" constant="288" id="vMz-i8-uD8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q4h-yg-VUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8EK-Ra-1Eb"/>
+                    <constraint firstAttribute="trailing" secondItem="Uet-N2-PH4" secondAttribute="trailing" constant="16" id="Liw-dG-dnv"/>
+                    <constraint firstItem="JrR-rg-Hsc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PzJ-sr-8RI"/>
+                    <constraint firstItem="JrR-rg-Hsc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="UwQ-Wa-AxZ"/>
+                    <constraint firstItem="Uet-N2-PH4" firstAttribute="leading" secondItem="fCh-xt-Z3D" secondAttribute="trailing" constant="9" id="gfy-ZV-6Bu"/>
+                    <constraint firstAttribute="bottom" secondItem="Uet-N2-PH4" secondAttribute="bottom" constant="18" id="l8Q-Cq-XVU"/>
+                    <constraint firstAttribute="bottom" secondItem="q4h-yg-VUh" secondAttribute="bottom" constant="23" id="pMh-9z-VpR"/>
+                    <constraint firstAttribute="bottom" secondItem="JrR-rg-Hsc" secondAttribute="bottom" constant="58" id="tFo-pK-oCD"/>
+                    <constraint firstAttribute="bottom" secondItem="fCh-xt-Z3D" secondAttribute="bottom" constant="23" id="tjL-SM-4h3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likeImage" destination="H2p-sc-9uM" id="498-Lj-oZl"/>
+                <outlet property="likesLabel" destination="fCh-xt-Z3D" id="t5D-CC-iBw"/>
+                <outlet property="unsplashImageView" destination="JrR-rg-Hsc" id="o70-Iw-kcA"/>
+                <outlet property="userNameLabel" destination="q4h-yg-VUh" id="5HQ-8I-mik"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="147.65625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like_white" width="96" height="96"/>
+        <image name="unsplash-logo" width="866" height="650"/>
+    </resources>
+</document>
