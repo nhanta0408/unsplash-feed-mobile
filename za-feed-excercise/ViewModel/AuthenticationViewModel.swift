@@ -7,7 +7,13 @@
 
 import Foundation
 
-class AuthenticationViewModel{
+class AuthenticationViewModel: AuthenticationViewModelProtocol{
+    var authRepository: AuthRepository?
+
+    init(authRepository: AuthRepository = AuthRepository()){
+        self.authRepository = authRepository
+    }
+    
     let clientId = "Vxq9CSSRhOpqEsYM0UnMig7H8_TBt6dqW_3Q2o4d9UQ"
     let redirectURI = "urn:ietf:wg:oauth:2.0:oob"
     
@@ -22,5 +28,8 @@ class AuthenticationViewModel{
         else{
             return ""
         }
+    }
+    func getAccessToken(codeOrToken: String, isRefreshToken: Bool){
+        authRepository?.getAccessToken(codeOrToken: codeOrToken, isRefreshToken: isRefreshToken)
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+typealias  LikeClickParameter = (String, Bool) -> Void
 class GalleryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var likeImage: UIView!
@@ -14,13 +15,13 @@ class GalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!
     
-    var username: String = ""
-    var imageUrl: String = ""
-    var likes: String = ""
-    
+    var post: Post!
+    var likeClikedClosure: LikeClickParameter!
     override func awakeFromNib() {
         super.awakeFromNib()
         likeImage.tintColor = .myBlue
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.likeClicked(_:)))
+        likeImage.addGestureRecognizer(tap)
         unsplashImageView.layer.cornerRadius = 10
 
 //        userNameLabel.text = "Nhan Huu Ta"
@@ -35,8 +36,13 @@ class GalleryTableViewCell: UITableViewCell {
     }
     
     func updateCell(){
-        userNameLabel.text = username
-        likesLabel.text = likes
-        unsplashImageView.load(url: URL(string: imageUrl)!)
+        userNameLabel.text = post.username
+        likesLabel.text = String(post.likes)
+        unsplashImageView.load(url: URL(string: post.url)!)
+        likeImage.tintColor = post.likedByUser ? UIColor.myBlue : UIColor.gray
+    }
+
+    @objc func likeClicked(_ sender: UITapGestureRecognizer? = nil) {
+        likeClikedClosure(post.id, post.likedByUser)
     }
 }

@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9892C926-D5C6-4604-A04F-0A13BBD0FA91"
+            uuid = "D567BC03-FBAE-4FD2-B629-C0FF5B622150"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "za-feed-excercise/View/ViewController/GalleryViewController.swift"
+            filePath = "za-feed-excercise/ViewModel/AuthenticationViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "onRightBarButtonClick()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getAccessToken(codeOrToken:isRefreshToken:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F4237EC-7746-47B9-A43D-4FF070DC29B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "za-feed-excercise/View/ViewController/AuthenticationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "webView(_:didCommit:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

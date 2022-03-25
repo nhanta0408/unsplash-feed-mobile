@@ -10,25 +10,26 @@ import Foundation
 
 struct PostModel: Codable{
     enum CodingKeys: String, CodingKey {
+        case id
         case urls
         case likes
-       case likedByUser = "liked_by_user"
+        case likedByUser = "liked_by_user"
         case user
     }
-    
-    let urls: Url
+    let id: String
+    let urls: UrlModel
     let likes: Int
     let likedByUser: Bool
-    let user: User
+    let user: UserModel
 }
 
-struct User: Codable {
+struct UserModel: Codable {
     let username: String
 }
 
-struct Url: Codable {
+struct UrlModel: Codable {
     enum CodingKeys: String, CodingKey {
-        case fullSize = "full"
+        case regularSize = "regular"
     }
-    let fullSize: String
+    let regularSize: String
 }

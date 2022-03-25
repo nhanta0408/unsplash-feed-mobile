@@ -11,14 +11,11 @@ import WebKit
 class AuthenticationViewController: UIViewController{
 
     @IBOutlet weak var webView: WKWebView!
-    var authenticationViewModel: AuthenticationViewModel!
+    let authenticationViewModel: AuthenticationViewModelProtocol = AuthenticationViewModel()
     var authenticationCode: String = ""
-    var repo = AuthRepository();
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        authenticationViewModel = AuthenticationViewModel()
-        
+              
         let url = URL(string: authenticationViewModel.generateTheAuthenticationUrl())!
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
@@ -33,8 +30,9 @@ extension AuthenticationViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         let currentURLString = webView.url?.absoluteString;
         authenticationCode = authenticationViewModel.checkHasAuthorizationCode(currentUrlString: currentURLString ?? "");
+        //Received authenticationCode
         if(authenticationCode != "") {
-            repo.getAccessToken(codeOrToken: authenticationCode, isRefreshToken: false)
+            authenticationViewModel.getAccessToken(codeOrToken: authenticationCode, isRefreshToken: false)
             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "GalleryViewController")
             vc.title = "Gallerry View Controller"
             vc.navigationItem.hidesBackButton = true;

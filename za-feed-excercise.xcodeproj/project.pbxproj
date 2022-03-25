@@ -14,6 +14,8 @@
 		B58FE3D227ECD05B000CDFE8 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FE3D127ECD05B000CDFE8 /* ImageRepository.swift */; };
 		B58FE3D627ECDA47000CDFE8 /* FakeDataGeneratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58FE3D527ECDA47000CDFE8 /* FakeDataGeneratio.swift */; };
 		B58FE3D827ECDBAA000CDFE8 /* jsonTest.json in Resources */ = {isa = PBXBuildFile; fileRef = B58FE3D727ECDBAA000CDFE8 /* jsonTest.json */; };
+		B5902C3427ED678900CEE04A /* GalleryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902C3327ED678900CEE04A /* GalleryViewModelProtocol.swift */; };
+		B5902C3627ED9AD900CEE04A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5902C3527ED9AD900CEE04A /* Observable.swift */; };
 		B5AE63CD27EC80AE00DE296A /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE63CC27EC80AE00DE296A /* AuthenticationViewController.swift */; };
 		B5AE63CF27EC822300DE296A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE63CE27EC822300DE296A /* AuthenticationViewModel.swift */; };
 		B5AE63D127EC8C4F00DE296A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE63D027EC8C4F00DE296A /* GalleryViewController.swift */; };
@@ -21,7 +23,7 @@
 		B5AE63D727EC998C00DE296A /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE63D627EC998C00DE296A /* AuthRepository.swift */; };
 		B5AE63D927ECAE5900DE296A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE63D827ECAE5900DE296A /* Constant.swift */; };
 		B5BEF62F27ECC97200FC549A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BEF62E27ECC97200FC549A /* UIColor+Extension.swift */; };
-		B5BEF63127ECCB0200FC549A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BEF63027ECCB0200FC549A /* UIImageView.swift */; };
+		B5BEF63127ECCB0200FC549A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BEF63027ECCB0200FC549A /* UIImageView+Extension.swift */; };
 		B5C75FA227EB46CD00955277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C75FA127EB46CD00955277 /* AppDelegate.swift */; };
 		B5C75FA427EB46CD00955277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C75FA327EB46CD00955277 /* SceneDelegate.swift */; };
 		B5C75FA627EB46CD00955277 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C75FA527EB46CD00955277 /* HomeViewController.swift */; };
@@ -29,6 +31,7 @@
 		B5C75FAC27EB46CD00955277 /* za_feed_excercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C75FAA27EB46CD00955277 /* za_feed_excercise.xcdatamodeld */; };
 		B5C75FAE27EB46CE00955277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C75FAD27EB46CE00955277 /* Assets.xcassets */; };
 		B5C75FB127EB46CE00955277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C75FAF27EB46CE00955277 /* LaunchScreen.storyboard */; };
+		B5E2609C27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2609B27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,8 @@
 		B58FE3D127ECD05B000CDFE8 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		B58FE3D527ECDA47000CDFE8 /* FakeDataGeneratio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataGeneratio.swift; sourceTree = "<group>"; };
 		B58FE3D727ECDBAA000CDFE8 /* jsonTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonTest.json; sourceTree = "<group>"; };
+		B5902C3327ED678900CEE04A /* GalleryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModelProtocol.swift; sourceTree = "<group>"; };
+		B5902C3527ED9AD900CEE04A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B5AE63CC27EC80AE00DE296A /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		B5AE63CE27EC822300DE296A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		B5AE63D027EC8C4F00DE296A /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +51,7 @@
 		B5AE63D627EC998C00DE296A /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		B5AE63D827ECAE5900DE296A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B5BEF62E27ECC97200FC549A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		B5BEF63027ECCB0200FC549A /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		B5BEF63027ECCB0200FC549A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		B5C75F9E27EB46CD00955277 /* za-feed-excercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "za-feed-excercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C75FA127EB46CD00955277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C75FA327EB46CD00955277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		B5C75FAD27EB46CE00955277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C75FB027EB46CE00955277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C75FB227EB46CE00955277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E2609B27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5902C3227ED677B00CEE04A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B5902C3327ED678900CEE04A /* GalleryViewModelProtocol.swift */,
+				B5E2609B27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		B5AE63C727EC807500DE296A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +97,10 @@
 		B5AE63C827EC807E00DE296A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B5902C3227ED677B00CEE04A /* Protocol */,
 				B5AE63CE27EC822300DE296A /* AuthenticationViewModel.swift */,
 				B58FE3CD27ECCF14000CDFE8 /* GalleryViewModel.swift */,
+				B5902C3527ED9AD900CEE04A /* Observable.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BEF62E27ECC97200FC549A /* UIColor+Extension.swift */,
-				B5BEF63027ECCB0200FC549A /* UIImageView.swift */,
+				B5BEF63027ECCB0200FC549A /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -244,13 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5902C3627ED9AD900CEE04A /* Observable.swift in Sources */,
 				B5AE63CF27EC822300DE296A /* AuthenticationViewModel.swift in Sources */,
 				B58FE3D027ECCF41000CDFE8 /* PostModel.swift in Sources */,
 				B58FE3CE27ECCF14000CDFE8 /* GalleryViewModel.swift in Sources */,
 				B58FE3D227ECD05B000CDFE8 /* ImageRepository.swift in Sources */,
 				B5AE63D127EC8C4F00DE296A /* GalleryViewController.swift in Sources */,
 				B5C75FA627EB46CD00955277 /* HomeViewController.swift in Sources */,
-				B5BEF63127ECCB0200FC549A /* UIImageView.swift in Sources */,
+				B5BEF63127ECCB0200FC549A /* UIImageView+Extension.swift in Sources */,
 				B5BEF62F27ECC97200FC549A /* UIColor+Extension.swift in Sources */,
 				B5C75FA227EB46CD00955277 /* AppDelegate.swift in Sources */,
 				B5AE63CD27EC80AE00DE296A /* AuthenticationViewController.swift in Sources */,
@@ -260,6 +278,8 @@
 				B5AE63D927ECAE5900DE296A /* Constant.swift in Sources */,
 				B536341427ECC28F00805B6D /* GalleryTableViewCell.swift in Sources */,
 				B5AE63D327EC97BE00DE296A /* TokenModel.swift in Sources */,
+				B5902C3427ED678900CEE04A /* GalleryViewModelProtocol.swift in Sources */,
+				B5E2609C27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift in Sources */,
 				B5AE63D727EC998C00DE296A /* AuthRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
