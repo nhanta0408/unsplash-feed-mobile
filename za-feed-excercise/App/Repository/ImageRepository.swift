@@ -13,8 +13,8 @@ typealias PostsModelParameter = ([PostModel]) -> Void
 class ImageRepository{
     var postModels: [PostModel]?
 
-    func getListImage(completion: @escaping PostsModelParameter)  {
-        let urlString = Constant.basetApiUrl + "/photos?page=1&per_page=10"
+    func getListImage(page: Int, completion: @escaping PostsModelParameter)  {
+        let urlString = Constant.basetApiUrl + "/photos?page=\(page)&per_page=\(Constant.numberOfPostsPerPage)"
         let url = URL(string: urlString)!
         var request = URLRequest(url: url)
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")

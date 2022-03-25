@@ -32,6 +32,10 @@
 		B5C75FAE27EB46CE00955277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C75FAD27EB46CE00955277 /* Assets.xcassets */; };
 		B5C75FB127EB46CE00955277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C75FAF27EB46CE00955277 /* LaunchScreen.storyboard */; };
 		B5E2609C27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2609B27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift */; };
+		B5E2609F27EDC6A500A2BB69 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2609D27EDC6A500A2BB69 /* LoadingCell.swift */; };
+		B5E260A027EDC6A500A2BB69 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E2609E27EDC6A500A2BB69 /* LoadingCell.xib */; };
+		B5E260A327EDC7C000A2BB69 /* BlankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E260A127EDC7C000A2BB69 /* BlankCell.swift */; };
+		B5E260A427EDC7C000A2BB69 /* BlankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E260A227EDC7C000A2BB69 /* BlankCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		B5C75FB027EB46CE00955277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C75FB227EB46CE00955277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5E2609B27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModelProtocol.swift; sourceTree = "<group>"; };
+		B5E2609D27EDC6A500A2BB69 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		B5E2609E27EDC6A500A2BB69 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		B5E260A127EDC7C000A2BB69 /* BlankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankCell.swift; sourceTree = "<group>"; };
+		B5E260A227EDC7C000A2BB69 /* BlankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlankCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,10 @@
 				B5AE63CA27EC808F00DE296A /* ViewController */,
 				B536341227ECC28F00805B6D /* GalleryTableViewCell.swift */,
 				B536341327ECC28F00805B6D /* GalleryTableViewCell.xib */,
+				B5E2609D27EDC6A500A2BB69 /* LoadingCell.swift */,
+				B5E2609E27EDC6A500A2BB69 /* LoadingCell.xib */,
+				B5E260A127EDC7C000A2BB69 /* BlankCell.swift */,
+				B5E260A227EDC7C000A2BB69 /* BlankCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,8 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E260A427EDC7C000A2BB69 /* BlankCell.xib in Resources */,
 				B58FE3D827ECDBAA000CDFE8 /* jsonTest.json in Resources */,
 				B536341527ECC28F00805B6D /* GalleryTableViewCell.xib in Resources */,
+				B5E260A027EDC6A500A2BB69 /* LoadingCell.xib in Resources */,
 				B5C75FB127EB46CE00955277 /* LaunchScreen.storyboard in Resources */,
 				B5C75FAE27EB46CE00955277 /* Assets.xcassets in Resources */,
 				B5C75FA927EB46CD00955277 /* Main.storyboard in Resources */,
@@ -267,6 +281,7 @@
 				B58FE3CE27ECCF14000CDFE8 /* GalleryViewModel.swift in Sources */,
 				B58FE3D227ECD05B000CDFE8 /* ImageRepository.swift in Sources */,
 				B5AE63D127EC8C4F00DE296A /* GalleryViewController.swift in Sources */,
+				B5E260A327EDC7C000A2BB69 /* BlankCell.swift in Sources */,
 				B5C75FA627EB46CD00955277 /* HomeViewController.swift in Sources */,
 				B5BEF63127ECCB0200FC549A /* UIImageView+Extension.swift in Sources */,
 				B5BEF62F27ECC97200FC549A /* UIColor+Extension.swift in Sources */,
@@ -279,6 +294,7 @@
 				B536341427ECC28F00805B6D /* GalleryTableViewCell.swift in Sources */,
 				B5AE63D327EC97BE00DE296A /* TokenModel.swift in Sources */,
 				B5902C3427ED678900CEE04A /* GalleryViewModelProtocol.swift in Sources */,
+				B5E2609F27EDC6A500A2BB69 /* LoadingCell.swift in Sources */,
 				B5E2609C27EDB54A00A2BB69 /* AuthenticationViewModelProtocol.swift in Sources */,
 				B5AE63D727EC998C00DE296A /* AuthRepository.swift in Sources */,
 			);

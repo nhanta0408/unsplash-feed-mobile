@@ -14,8 +14,10 @@ class GalleryTableViewCell: UITableViewCell {
     @IBOutlet weak var unsplashImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     var post: Post!
+    var indexNumber: Int = 0
     var likeClikedClosure: LikeClickParameter!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +38,7 @@ class GalleryTableViewCell: UITableViewCell {
     }
     
     func updateCell(){
+        numberLabel.text = String(indexNumber)
         userNameLabel.text = post.username
         likesLabel.text = String(post.likes)
         unsplashImageView.load(url: URL(string: post.url)!)

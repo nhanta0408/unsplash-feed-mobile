@@ -9,6 +9,7 @@ import UIKit
 
 class LoadingCell: UITableViewCell {
 
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

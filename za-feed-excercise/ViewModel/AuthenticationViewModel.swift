@@ -29,7 +29,9 @@ class AuthenticationViewModel: AuthenticationViewModelProtocol{
             return ""
         }
     }
-    func getAccessToken(codeOrToken: String, isRefreshToken: Bool){
-        authRepository?.getAccessToken(codeOrToken: codeOrToken, isRefreshToken: isRefreshToken)
+    func getAccessToken(codeOrToken: String, isRefreshToken: Bool, completion: @escaping VoidClosure){
+        authRepository?.getAccessToken(codeOrToken: codeOrToken, isRefreshToken: isRefreshToken) {
+            completion()
+        }
     }
 }

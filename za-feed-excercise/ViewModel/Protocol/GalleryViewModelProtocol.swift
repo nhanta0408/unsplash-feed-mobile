@@ -9,8 +9,9 @@ import Foundation
 
 protocol GalleryViewModelProtocol{
     var imageRepository: ImageRepository? {get}
-    var posts: Observable<[Post]> {get set}
+    var newCountOfPosts: Observable<Int> {get set}
+    var uptodatePosts: [Post]! {get set}
     func getListPhoto()
-    func handleLikeDislikeClick(imageId: String, isLiked: Bool, currentPost: Post, completion: @escaping PostParameter) 
-    
+    func handleLikeDislikeClick(imageId: String, isLiked: Bool, completion: @escaping PostParameter) 
+    func loadMoreData(completion: VoidClosure)
 }

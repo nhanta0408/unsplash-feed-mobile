@@ -13,6 +13,9 @@ struct Constant{
     static let clientId = "Vxq9CSSRhOpqEsYM0UnMig7H8_TBt6dqW_3Q2o4d9UQ"
     static let clientSecret = "1qKCNzgwkWitM5ZQykn04Zojx7yrZ6yGGcmMUq_j2bA"
     static let redirectUri = "urn:ietf:wg:oauth:2.0:oob"
+    
+    static let maximumPosts = 30
+    static let numberOfPostsPerPage = 10
 }
 
 

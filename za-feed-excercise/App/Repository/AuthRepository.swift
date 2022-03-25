@@ -17,7 +17,7 @@ class AuthRepository{
             return Constant.baseUrl + "/oauth/token" + "?client_id=" + Constant.clientId + "&client_secret=" + Constant.clientSecret + "&redirect_uri=" + Constant.redirectUri + "&code=" + codeOrToken + "&grant_type=" + GrantType.authorizationCode.rawValue
         }
     }
-    func getAccessToken(codeOrToken: String, isRefreshToken: Bool){
+    func getAccessToken(codeOrToken: String, isRefreshToken: Bool, completion: @escaping VoidClosure){
         let urlString = generateUrlForGetAccessToken(codeOrToken: codeOrToken, isRefreshToken: isRefreshToken)
         let url = URL(string: urlString)!
         let task = URLSession(configuration: .default).dataTask(with: url) {(data: Data?, response: URLResponse?, error: Error?) in
@@ -28,6 +28,7 @@ class AuthRepository{
                     refreshToken = decodedResponse.refreshToken
                     print("Here is accessToken: \(accessToken)")
                     print("Here is refreshToken: \(refreshToken)")
+                    completion()
                 }
             }
             task.resume()
