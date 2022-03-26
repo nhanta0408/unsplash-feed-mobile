@@ -2,7 +2,7 @@
 //  AccessModel.swift
 //  za-feed-excercise
 //
-//  Created by gcshcm on 24/03/2022.
+//  Created by NhanHuuTa on 24/03/2022.
 //
 
 import Foundation

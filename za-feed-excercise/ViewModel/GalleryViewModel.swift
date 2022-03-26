@@ -2,7 +2,7 @@
 //  GalleryViewModel.swift
 //  za-feed-excercise
 //
-//  Created by gcshcm on 24/03/2022.
+//  Created by NhanHuuTa on 24/03/2022.
 //
 
 import Foundation
@@ -23,7 +23,7 @@ class GalleryViewModel: (GalleryViewModelProtocol){
     public var imageRepository: ImageRepository?
     
     var newCountOfPosts: Observable<Int> = Observable(0)
-    var uptodatePosts: [Post]!
+    var uptodatePosts: [Post] = [Post]()
     init(imageRepository: ImageRepository = ImageRepository()){
         self.imageRepository = imageRepository
     }
@@ -39,6 +39,7 @@ class GalleryViewModel: (GalleryViewModelProtocol){
         }
     }
     // Don't use the "binding method" to avoid reloading all table. It is need to just update one cell
+    // Reload all table will make a splash on screen because we have to fetch the image through internet by imageUrl
     func handleLikeDislikeClick(imageId: String, isLiked: Bool, completion: @escaping PostParameter) {
         DispatchQueue.global(qos: .userInitiated).async {
             self.imageRepository?.likeDislikeImage(imageId: imageId, isLiked: isLiked) {

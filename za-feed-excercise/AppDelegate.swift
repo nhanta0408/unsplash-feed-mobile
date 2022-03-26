@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  za-feed-excercise
 //
-//  Created by gcshcm on 23/03/2022.
+//  Created by NhanHuuTa on 23/03/2022.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  AuthenticationViewModel.swift
 //  za-feed-excercise
 //
-//  Created by gcshcm on 24/03/2022.
+//  Created by NhanHuuTa on 24/03/2022.
 //
 
 import Foundation
@@ -14,13 +14,13 @@ class AuthenticationViewModel: AuthenticationViewModelProtocol{
         self.authRepository = authRepository
     }
     
-    let clientId = "Vxq9CSSRhOpqEsYM0UnMig7H8_TBt6dqW_3Q2o4d9UQ"
-    let redirectURI = "urn:ietf:wg:oauth:2.0:oob"
+  
     
     
     func generateTheAuthenticationUrl() -> String{
-        return "https://unsplash.com/oauth/authorize?client_id=\(clientId)&redirect_uri=\(redirectURI)&response_type=code&scope=public+read_user+write_user+read_photos+write_photos+write_likes+write_followers+read_collections+write_collections"
+        return "https://unsplash.com/oauth/authorize?client_id=\(Constant.clientId)&redirect_uri=\(Constant.redirectUri)&response_type=code&scope=public+read_user+write_user+read_photos+write_photos+write_likes+write_followers+read_collections+write_collections"
     }
+    // Based on the url, get the authentication code
     func checkHasAuthorizationCode(currentUrlString: String) -> String{
         if (currentUrlString.contains("https://unsplash.com/oauth/authorize/native?code=")){
             return currentUrlString.components(separatedBy: "=")[1];
