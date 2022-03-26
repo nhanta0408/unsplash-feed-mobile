@@ -33,7 +33,7 @@ extension AuthenticationViewController: WKNavigationDelegate {
         //Received authenticationCode
         if(authenticationCode != "") {
             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "GalleryViewController") as! GalleryViewController
-            vc.title = "Gallerry View Controller"
+            vc.title = "Gallerry"
             vc.navigationItem.hidesBackButton = true;
             self.navigationController?.pushViewController(vc, animated: true)
             authenticationViewModel.getAccessToken(codeOrToken: authenticationCode, isRefreshToken: false){
